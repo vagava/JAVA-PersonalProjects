@@ -6,9 +6,9 @@ public class Book {
     private String author;
     private boolean available;
 
-    // getter y setter: sirven para acceder a atributos provados desde otra clase
+    // getter y setter: sirven para acceder a atributos privados desde otra clase
     /*
-        - Debe ser publico para que sepueda acceder desde otras clases
+        - Debe ser público para que se pueda acceder desde otras clases
         - debe tener un tipo de retorno del mismo tipo que el atributo que va a retornar
         - debe iniciar con la palabra "get"
      */
@@ -17,9 +17,9 @@ public class Book {
         return title;
     }
     /*
-        - Debe ser publico para que sepueda acceder desde otras clases
-        - No retorna nada, por esto estipo void.
-        - debe recibir como paramametro una variable del mismo tipo que el atributo que se va a modificar
+        - Debe ser público para que se pueda acceder desde otras clases
+        - No retorna nada, por esto es tipo void.
+        - debe recibir como parameter una variable del mismo tipo que el atributo que se va a modificar
         - debe iniciar con la palabra "set"
      */
 
@@ -35,6 +35,7 @@ public class Book {
         this.author = author;
     }
 
+    // para obtener un booleano se cambia la palabra "get" por "is"
     public boolean isAvailable() {
         return available;
     }
